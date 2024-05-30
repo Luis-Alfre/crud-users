@@ -1,12 +1,9 @@
-
 import controller.Controller;
 import view.View;
 import model.Model;
 
-public class App 
-{
-    public static void main( String[] args )
-    {
+public class App {
+    public static void main(String[] args) {
         Model model = new Model();
         View view = new View();
 
