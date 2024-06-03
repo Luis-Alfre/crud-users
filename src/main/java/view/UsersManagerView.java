@@ -45,7 +45,7 @@ public class UsersManagerView extends JFrame{
 	private void initComponents() {
 		lbId = new JLabel("");
 		lbName = new JLabel("Nombre");
-		lbEmail = new JLabel("Dirección Emial");
+		lbEmail = new JLabel("Email");
 		lbDocument = new JLabel("Documento");
 		lbAddress = new JLabel("Dirección");
 		lbRole = new JLabel("Cargo");
