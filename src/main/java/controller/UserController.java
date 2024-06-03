@@ -117,8 +117,10 @@ public class UserController {
 					this.clear();
 					this.loadData(null);
 				}else {
-					JOptionPane.showMessageDialog(this.userManagerView, "Usuario agregado con exito");
-					this.loadData(null);
+                                    this.save(user);
+                                    this.clear();
+                                    JOptionPane.showMessageDialog(this.userManagerView, "Usuario agregado con exito");
+                                    this.loadData(null);
 				}
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
@@ -231,10 +233,10 @@ public class UserController {
 	}
 	
 	public boolean checkFields() {
-		if (this.userManagerView.getFieldName().getText().isBlank() || 
-			this.userManagerView.getFieldDocument().getText().isBlank() ||
-			this.userManagerView.getFieldAddress().getText().isBlank() ||
-			this.userManagerView.getFieldEmail().getText().isBlank() ||
+		if (this.userManagerView.getFieldName().getText() == "" || 
+			this.userManagerView.getFieldDocument().getText() == "" ||
+			this.userManagerView.getFieldAddress().getText() == "" ||
+			this.userManagerView.getFieldEmail().getText() == "" ||
 			((Role)this.userManagerView.getComboRole().getSelectedItem()).getId() == 0) {
 			
 			return false;
