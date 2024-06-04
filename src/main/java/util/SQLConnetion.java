@@ -14,8 +14,8 @@ public class SQLConnetion {
 		//Creamos un pool de conexiones
 		ComboPooledDataSource pool = new ComboPooledDataSource();
 		pool.setJdbcUrl("jdbc:mysql://localhost/market_plus?useTimeZone=true&serverTimeZone=UTC");
-		pool.setUser("miguecode");
-		pool.setPassword("miguecode");
+		pool.setUser("root");
+		pool.setPassword("");
 		//Asginar el maximo de conexiones en paralelo
 		pool.setMaxPoolSize(30);
 		
